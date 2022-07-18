@@ -1,0 +1,67 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+BloX | Home page
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="nav-container">
+        <div class="logo">
+            <span style="font-size: 94px">B</span><span>loX</span>
+            <span class="index_logo">modern IT blog</span>
+        </div>
+
+        <div class="nav-btns">
+            <div id="nav-about" class="nav-btn">
+                <p>About</p>
+            </div>
+            <div id="nav-blocks" class="nav-btn active">
+                <p>blocks</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main-image">
+            <img src={% static 'blog/assets/images/jack_blue.png' %} alt="" />
+        </div>
+        <div class="main-image-underline"></div>
+    </div>
+
+    <div class="posts">
+        <div class="post-container">
+            <div class="post-header">
+                <div class="header-before-line"></div>
+                <p>Docker Image <span>NEW</span></p>
+                <div class="header-after-line"></div>
+            </div>
+
+            <div class="post-text">
+                <p>
+                    Docker Desktop can be used for free as part of a Docker Personal
+                    subscription for: small companies (fewer than 250 employees AND
+                    less than $10 million in annual revenue), personal use,
+                    education, and non-commercial open source projects. Docker
+                    Desktop requires a per user paid Pro, Team or Business
+                    subscription for professional use in larger companies with
+                    subscriptions available for as little as $5 per month.
+                </p>
+            </div>
+
+            <div class="post-img">
+                <img src={% static 'blog/assets/images/_img_1.png' %} alt="" />
+            </div>
+
+            <div class="post-number">
+                <p>01.</p>
+            </div>
+
+            <div class="post-date">
+                <p>24 February 2022</p>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
